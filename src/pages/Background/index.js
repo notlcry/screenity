@@ -1658,7 +1658,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       true
     );
   } else if (request.type === "join-waitlist") {
-    createTab("https://tally.so/r/npojNV", true, true);
+    // 此处不再需要跳转到外部链接，因为已经直接在Title.jsx和ShareModal.jsx中处理上传功能
+    // 保留这个处理函数以防止出现未处理的消息错误
   } else if (request.type === "chrome-update-info") {
     createTab(
       "https://help.screenity.io/getting-started/77KizPC8MHVGfpKpqdux9D/what-are-the-technical-requirements-for-using-screenity/6kdB6qru6naVD8ZLFvX3m9",

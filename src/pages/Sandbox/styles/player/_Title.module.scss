@@ -56,6 +56,73 @@
   display: inline-block;
   color: $color-icon;
 }
+
+.shareLinks {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  gap: 12px;
+  top: -6px;
+}
+
+.uploadedLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f9ff;
+  color: $color-text-primary;
+  border: 1px solid $color-text-primary;
+  border-radius: $container-border-radius;
+  padding: 0px 16px;
+  height: 40px;
+  gap: 8px;
+  font-size: 500;
+  font-family: $font-medium;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(#f0f9ff, 5%);
+    text-decoration: none;
+  }
+}
+
+.copyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6f7e6;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+  border-radius: $container-border-radius;
+  padding: 0px 16px;
+  height: 40px;
+  gap: 8px;
+  font-size: 500;
+  font-family: $font-medium;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(#e6f7e6, 2%);
+  }
+}
+
+.copyIcon {
+  width: 16px;
+  svg {
+    color: #2e7d32;
+    margin-top: 1px;
+  }
+}
+
+.linkIcon {
+  width: 16px;
+  svg {
+    color: $color-text-primary;
+    margin-top: 1px;
+  }
+}
+
 .shareButton {
   display: flex;
   justify-content: center;
@@ -65,12 +132,9 @@
   border-radius: $container-border-radius;
   padding: 0px 16px;
   height: 40px;
-  position: absolute;
-  right: 0px;
   gap: 8px;
   font-size: 500;
   font-family: $font-medium;
-  top: -6px;
 
   &:hover {
     cursor: pointer;
